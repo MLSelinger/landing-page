@@ -6,13 +6,15 @@
 body{
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 100px;
-
+    padding: 10px 200px;
+    flex-shrink: 0;
+    
 }
 .logo {
     font-size: 24px;
@@ -43,7 +45,7 @@ a{
 .hero {
     display: flex;
     justify-content: space-between;
-    padding: 80px 100px;
+    padding: 80px 200px;
 }
 
 
@@ -81,6 +83,7 @@ a{
     width: 125px;
     border: solid 2px #3882F6;
     border-radius: 10px;
+    
 }
 
 .image{
@@ -89,21 +92,19 @@ a{
     align-items: center;
     text-align: center;
     width: 150px;
-    padding-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .pictures {
     display: flex;
-
+    gap: 60px;
 }
-
-
 
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    gap: 25px;
 }
 
 .body h2 {
@@ -111,4 +112,56 @@ a{
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #d8e2f8;
+    padding: 75px;
+   
+}
+
+.phrase {
+    width: 750px;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+}
+.author {
+    display: flex;
+    color:#1F2937;
+    justify-content: flex-end;
+    font-weight: 900;
+    padding-right: 25px;
+}
+
+.call {
+    display: flex;
+    margin: 50px 200px;
+    padding: 25px 100px;
+    background-color: #3882F6;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call h4 {
+    color: #F9FAF8;
+}
+
+.call p {
+    color: #d8e2f8;
+}
+
+.call button {
+    text-decoration: none;
+    border: solid 2px #d8e2f8;
+    border-radius: 5px;
+    background-color: #3882F6;
+    padding: 5px 20px;
+    color: #d8e2f8;
 }
